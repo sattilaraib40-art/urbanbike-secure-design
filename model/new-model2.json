@@ -1,0 +1,2371 @@
+{
+  "version": "2.6.2",
+  "summary": {
+    "title": "Controls aur Architecture v2",
+    "owner": "",
+    "description": "",
+    "id": 0
+  },
+  "detail": {
+    "contributors": [],
+    "diagrams": [
+      {
+        "id": 0,
+        "title": "New STRIDE diagram",
+        "diagramType": "STRIDE",
+        "placeholder": "New STRIDE diagram description",
+        "thumbnail": "./public/content/images/thumbnail.stride.jpg",
+        "version": "2.6.2",
+        "cells": [
+          {
+            "position": {
+              "x": 81.99999999999935,
+              "y": -28.999999999999545
+            },
+            "size": {
+              "width": 130,
+              "height": 460
+            },
+            "attrs": {
+              "label": {
+                "text": "TB1 Internet"
+              }
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "zIndex": -1,
+            "id": "83fb7007-8f76-423d-b265-d4004d29a7bc",
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "TB1 Internet",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [],
+              "containedElements": [
+                "4d989e8c-01b0-4d45-a8ad-7b61aa77d853",
+                "ba646a96-1234-44b3-89bf-fd1b914134f8"
+              ]
+            }
+          },
+          {
+            "position": {
+              "x": 322.9999999999991,
+              "y": -28.99999999999946
+            },
+            "size": {
+              "width": 620,
+              "height": 500
+            },
+            "attrs": {
+              "label": {
+                "text": "                             TB2 UrbanBike backend"
+              }
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "zIndex": -1,
+            "id": "2a645873-d971-44c7-930c-1f2296d5163c",
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "                             TB2 UrbanBike backend",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [
+                "a32632ba-269e-4438-8886-439897673476",
+                "894bfcc9-748d-4e60-97a6-ab7be9142c43",
+                "1d90c62a-9a3f-4086-8950-4fc8dc6c178d",
+                "fd6c4a53-6230-42fa-ae5a-f59459e14fdb",
+                "20b0134d-93b5-4d27-88b2-cc7dbfdaeb71",
+                "ab00c8d7-7e0d-4cf7-915a-64d8919dbdd2",
+                "def9aee2-fcad-49d6-99d5-b5bd9bdc0bf3",
+                "681b89dc-0ecc-4379-9ea8-9bc2fc4a83ff",
+                "32a7659e-a7a6-4692-96ad-3c8b58bb3c1e"
+              ],
+              "containedElements": [
+                "b61f8b7c-8be4-4384-a707-d5337c9902f2",
+                "17ae37da-e8a2-4c9e-9901-762b3a01a864",
+                "bdc0127e-b8d6-45f6-8cd8-290d81dea3ba",
+                "3f1d3cea-1e6a-4519-b54f-866e78b25536",
+                "50536d46-a439-4324-9859-9923434c02f6",
+                "b443870c-8418-4667-a953-928a0f2cbe11",
+                "d498fea8-8371-4ff1-a77a-d58ca9f47cb1",
+                "ebec44a1-1648-4e4f-b089-9102c65d7ea5",
+                "3cd09959-4350-433a-97d3-85c77444c191"
+              ]
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
+            }
+          },
+          {
+            "position": {
+              "x": 1019.9999999999977,
+              "y": -28.99999999999875
+            },
+            "size": {
+              "width": 140,
+              "height": 460
+            },
+            "attrs": {
+              "label": {
+                "text": "TB3 Lock\n    vendor"
+              }
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "zIndex": -1,
+            "id": "d019153a-34f7-41fe-a583-9b994811a683",
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "TB3 Lock\n    vendor",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [
+                "681b89dc-0ecc-4379-9ea8-9bc2fc4a83ff"
+              ],
+              "containedElements": [
+                "e87f155e-2ccf-4711-b975-cf0ddf3e409b"
+              ]
+            }
+          },
+          {
+            "position": {
+              "x": 90,
+              "y": 10
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "E1 Rider"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "zIndex": 1,
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "51d0c3dc-64d4-41bf-a53e-672021199b31"
+                },
+                {
+                  "group": "right",
+                  "id": "4d62af45-dbbf-4136-a933-21cbda1af24e"
+                },
+                {
+                  "group": "bottom",
+                  "id": "15164594-d001-4e6d-bc32-8fcf11848f11"
+                },
+                {
+                  "group": "left",
+                  "id": "6ad8c0d6-1602-47fb-a43d-e382a6a47793"
+                }
+              ]
+            },
+            "id": "4d989e8c-01b0-4d45-a8ad-7b61aa77d853",
+            "data": {
+              "type": "tm.Actor",
+              "name": "E1 Rider",
+              "description": "",
+              "isTrustBoundary": false,
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 90,
+              "y": 322
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "E2 Operator"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "zIndex": 2,
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "51d0c3dc-64d4-41bf-a53e-672021199b31"
+                },
+                {
+                  "group": "right",
+                  "id": "4d62af45-dbbf-4136-a933-21cbda1af24e"
+                },
+                {
+                  "group": "bottom",
+                  "id": "15164594-d001-4e6d-bc32-8fcf11848f11"
+                },
+                {
+                  "group": "left",
+                  "id": "6ad8c0d6-1602-47fb-a43d-e382a6a47793"
+                }
+              ]
+            },
+            "id": "ba646a96-1234-44b3-89bf-fd1b914134f8",
+            "data": {
+              "type": "tm.Actor",
+              "name": "E2 Operator",
+              "description": "",
+              "isTrustBoundary": false,
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 338,
+              "y": 10
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "C1 Limiter\n5 tries/min"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "zIndex": 3,
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "51d0c3dc-64d4-41bf-a53e-672021199b31"
+                },
+                {
+                  "group": "right",
+                  "id": "4d62af45-dbbf-4136-a933-21cbda1af24e"
+                },
+                {
+                  "group": "bottom",
+                  "id": "15164594-d001-4e6d-bc32-8fcf11848f11"
+                },
+                {
+                  "group": "left",
+                  "id": "6ad8c0d6-1602-47fb-a43d-e382a6a47793"
+                }
+              ]
+            },
+            "id": "b61f8b7c-8be4-4384-a707-d5337c9902f2",
+            "data": {
+              "type": "tm.Actor",
+              "name": "C1 Limiter\n5 tries/min",
+              "description": "",
+              "isTrustBoundary": false,
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 339.25,
+              "y": 240
+            },
+            "size": {
+              "width": 110,
+              "height": 180
+            },
+            "attrs": {
+              "text": {
+                "text": "C2 Auth gate\nlogin + role"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "zIndex": 4,
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "51d0c3dc-64d4-41bf-a53e-672021199b31"
+                },
+                {
+                  "group": "right",
+                  "id": "4d62af45-dbbf-4136-a933-21cbda1af24e"
+                },
+                {
+                  "group": "bottom",
+                  "id": "15164594-d001-4e6d-bc32-8fcf11848f11"
+                },
+                {
+                  "group": "left",
+                  "id": "6ad8c0d6-1602-47fb-a43d-e382a6a47793"
+                }
+              ]
+            },
+            "id": "17ae37da-e8a2-4c9e-9901-762b3a01a864",
+            "data": {
+              "type": "tm.Actor",
+              "name": "C2 Auth gate\nlogin + role",
+              "description": "",
+              "isTrustBoundary": false,
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 570,
+              "y": 9.999999999999957
+            },
+            "size": {
+              "width": 80,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "P1 Login\n/login"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "zIndex": 5,
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "5199a4fb-5a6e-42db-bff7-59a1935f57ed"
+                },
+                {
+                  "group": "right",
+                  "id": "e1aa093b-90c2-40b6-8887-65ba9978cced"
+                },
+                {
+                  "group": "bottom",
+                  "id": "6aaf6876-61eb-4cd5-ae75-f36272f53f18"
+                },
+                {
+                  "group": "left",
+                  "id": "8e69f883-f28b-4607-a0c3-ed71fed4ac2d"
+                }
+              ]
+            },
+            "id": "bdc0127e-b8d6-45f6-8cd8-290d81dea3ba",
+            "data": {
+              "type": "tm.Process",
+              "name": "P1 Login\n/login",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": [
+                {
+                  "id": "a2c17bb9-263d-4db3-adf2-83febd5c0f40",
+                  "title": "SQL injection in login",
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "type": "Tampering",
+                  "description": "TOP 5. L5 x I5 = 25. An attacker can type special text in the login box and log in without knowing the password.",
+                  "mitigation": "Use a parameterized query for login. Also store hashed passwords, not plain text.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 7,
+                  "score": "2o"
+                },
+                {
+                  "id": "4469abef-5a40-4c4a-a380-cea24e10e9fc",
+                  "title": " Forged session cookie",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Spoofing",
+                  "description": "L3 x I4 = 12. The secret key is written in the code, so an attacker can make a fake login cookie and pretend to be a rider.",
+                  "mitigation": "Keep the secret key in an environment variable and use a long random value. (D4 Secrets)",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 8,
+                  "score": "12"
+                },
+                {
+                  "id": "6ea7d32a-b281-4e2d-afaf-f839c561e1c4",
+                  "title": "Brute force on login",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Denial of service",
+                  "description": "L4 x I3 = 12. There was no limit on login attempts, so an attacker could try thousands of passwords.",
+                  "mitigation": "Limit login attempts to 5 per minute. Block the user for a while after too many failures. (C1 Limiter)",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 9,
+                  "score": "12"
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "tampering": 1,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 1,
+                "elevationOfPrivilege": 0
+              }
+            }
+          },
+          {
+            "position": {
+              "x": 570,
+              "y": 172
+            },
+            "size": {
+              "width": 110,
+              "height": 100
+            },
+            "attrs": {
+              "text": {
+                "text": "P2 Ride service\n/unlock, /rides"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "zIndex": 6,
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "5199a4fb-5a6e-42db-bff7-59a1935f57ed"
+                },
+                {
+                  "group": "right",
+                  "id": "e1aa093b-90c2-40b6-8887-65ba9978cced"
+                },
+                {
+                  "group": "bottom",
+                  "id": "6aaf6876-61eb-4cd5-ae75-f36272f53f18"
+                },
+                {
+                  "group": "left",
+                  "id": "8e69f883-f28b-4607-a0c3-ed71fed4ac2d"
+                }
+              ]
+            },
+            "id": "3f1d3cea-1e6a-4519-b54f-866e78b25536",
+            "data": {
+              "type": "tm.Process",
+              "name": "P2 Ride service\n/unlock, /rides",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": [
+                {
+                  "id": "942986d3-9d39-4a5f-b27d-717608141592",
+                  "title": "Unlock without login",
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "type": "Spoofing",
+                  "description": "TOP 5. L5 x I5 = 25. On flow F3, anyone could call /unlock without logging in and open a bike.",
+                  "mitigation": "Check that the user is logged in before unlocking. Also check that the bike belongs to the rider's ride. (C2 Auth gate)",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 10,
+                  "score": "25"
+                },
+                {
+                  "id": "e23b7291-108e-4e2a-a880-0f53dc652bf1",
+                  "title": "Errors reveal internals",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Denial of service",
+                  "description": "L4 x I3 = 12. Debug mode and raw error messages showed internal details to the attacker.",
+                  "mitigation": "Turn debug off. Show a simple message like \"Something went wrong\" and save the real error in a server log.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 11,
+                  "score": "12"
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "tampering": 0,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 1,
+                "elevationOfPrivilege": 0
+              }
+            }
+          },
+          {
+            "position": {
+              "x": 570,
+              "y": 295
+            },
+            "size": {
+              "width": 80,
+              "height": 70
+            },
+            "attrs": {
+              "text": {
+                "text": "P3 Refund\n/refund"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "zIndex": 7,
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "5199a4fb-5a6e-42db-bff7-59a1935f57ed"
+                },
+                {
+                  "group": "right",
+                  "id": "e1aa093b-90c2-40b6-8887-65ba9978cced"
+                },
+                {
+                  "group": "bottom",
+                  "id": "6aaf6876-61eb-4cd5-ae75-f36272f53f18"
+                },
+                {
+                  "group": "left",
+                  "id": "8e69f883-f28b-4607-a0c3-ed71fed4ac2d"
+                }
+              ]
+            },
+            "id": "50536d46-a439-4324-9859-9923434c02f6",
+            "data": {
+              "type": "tm.Process",
+              "name": "P3 Refund\n/refund",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": [
+                {
+                  "id": "da45d319-f06b-44da-80c4-08e3b91e0eb1",
+                  "title": " Rider acts as operator",
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "type": "Elevation of privilege",
+                  "description": "L4 x I4 = 16. On flow F6, a normal rider could call /refund because there was no role check.",
+                  "mitigation": "Save the user's role (rider or operator) at login and check it on /refund. (C2 Auth gate)",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 12,
+                  "score": "16"
+                },
+                {
+                  "id": "768e9de3-0d6d-44c3-a338-20572fa50ed0",
+                  "title": "Refund has no audit log",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Repudiation",
+                  "description": " L3 x I3 = 9. Refunds were not recorded, so nobody could prove who gave a refund.",
+                  "mitigation": "Write a log line for every refund with the time, operator id and ride id. (D3 Audit log)",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 13,
+                  "score": "9"
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 0,
+                "tampering": 0,
+                "repudiation": 2,
+                "informationDisclosure": 0,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 1
+              }
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
+            }
+          },
+          {
+            "position": {
+              "x": 810,
+              "y": 10
+            },
+            "size": {
+              "width": 120,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "D1 Riders DB\nhashed passwords"
+              },
+              "topLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "zIndex": 8,
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "9add434b-318a-458b-82a8-7b8aed4d8f7f"
+                },
+                {
+                  "group": "right",
+                  "id": "d0db37da-7d9c-403f-8950-33bf3381d9e8"
+                },
+                {
+                  "group": "bottom",
+                  "id": "152dbbfb-d100-4298-9e52-af269fe8856e"
+                },
+                {
+                  "group": "left",
+                  "id": "77c6935d-371e-4e61-883e-da265544dbbc"
+                }
+              ]
+            },
+            "id": "b443870c-8418-4667-a953-928a0f2cbe11",
+            "data": {
+              "type": "tm.Store",
+              "name": "D1 Riders DB\nhashed passwords",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isALog": false,
+              "isEncrypted": false,
+              "isSigned": false,
+              "storesCredentials": false,
+              "storesInventory": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 810,
+              "y": 120
+            },
+            "size": {
+              "width": 120,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "D4 Secrets\nenv variables"
+              },
+              "topLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "zIndex": 9,
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "9add434b-318a-458b-82a8-7b8aed4d8f7f"
+                },
+                {
+                  "group": "right",
+                  "id": "d0db37da-7d9c-403f-8950-33bf3381d9e8"
+                },
+                {
+                  "group": "bottom",
+                  "id": "152dbbfb-d100-4298-9e52-af269fe8856e"
+                },
+                {
+                  "group": "left",
+                  "id": "77c6935d-371e-4e61-883e-da265544dbbc"
+                }
+              ]
+            },
+            "id": "d498fea8-8371-4ff1-a77a-d58ca9f47cb1",
+            "data": {
+              "type": "tm.Store",
+              "name": "D4 Secrets\nenv variables",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isALog": false,
+              "isEncrypted": false,
+              "isSigned": false,
+              "storesCredentials": false,
+              "storesInventory": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 810,
+              "y": 272
+            },
+            "size": {
+              "width": 120,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "D2 Rides DB\nrides, costs"
+              },
+              "topLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "zIndex": 10,
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "9add434b-318a-458b-82a8-7b8aed4d8f7f"
+                },
+                {
+                  "group": "right",
+                  "id": "d0db37da-7d9c-403f-8950-33bf3381d9e8"
+                },
+                {
+                  "group": "bottom",
+                  "id": "152dbbfb-d100-4298-9e52-af269fe8856e"
+                },
+                {
+                  "group": "left",
+                  "id": "77c6935d-371e-4e61-883e-da265544dbbc"
+                }
+              ]
+            },
+            "id": "ebec44a1-1648-4e4f-b089-9102c65d7ea5",
+            "data": {
+              "type": "tm.Store",
+              "name": "D2 Rides DB\nrides, costs",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isALog": false,
+              "isEncrypted": false,
+              "isSigned": false,
+              "storesCredentials": false,
+              "storesInventory": false,
+              "threats": []
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Credentials",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": [
+                "2a645873-d971-44c7-930c-1f2296d5163c"
+              ]
+            },
+            "labels": [
+              "Credentials"
+            ],
+            "id": "a32632ba-269e-4438-8886-439897673476",
+            "source": {
+              "x": 203,
+              "y": 34
+            },
+            "target": {
+              "cell": "b61f8b7c-8be4-4384-a707-d5337c9902f2",
+              "port": "6ad8c0d6-1602-47fb-a43d-e382a6a47793"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Allowed login",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": [
+                "2a645873-d971-44c7-930c-1f2296d5163c"
+              ]
+            },
+            "labels": [
+              "Allowed login"
+            ],
+            "id": "894bfcc9-748d-4e60-97a6-ab7be9142c43",
+            "source": {
+              "x": 451,
+              "y": 34
+            },
+            "target": {
+              "cell": "bdc0127e-b8d6-45f6-8cd8-290d81dea3ba",
+              "port": "8e69f883-f28b-4607-a0c3-ed71fed4ac2d"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Checked refund",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Checked refund"
+            ],
+            "id": "4825afab-707e-4a27-b176-2c7eafba234a",
+            "source": {
+              "cell": "17ae37da-e8a2-4c9e-9901-762b3a01a864",
+              "port": "4d62af45-dbbf-4136-a933-21cbda1af24e"
+            },
+            "target": {
+              "cell": "50536d46-a439-4324-9859-9923434c02f6",
+              "port": "8e69f883-f28b-4607-a0c3-ed71fed4ac2d"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Lookup",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": [
+                "2a645873-d971-44c7-930c-1f2296d5163c"
+              ]
+            },
+            "labels": [
+              "Lookup"
+            ],
+            "id": "1d90c62a-9a3f-4086-8950-4fc8dc6c178d",
+            "source": {
+              "x": 650,
+              "y": 37
+            },
+            "target": {
+              "cell": "b443870c-8418-4667-a953-928a0f2cbe11",
+              "port": "77c6935d-371e-4e61-883e-da265544dbbc"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": " Ride records ",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": [
+                "2a645873-d971-44c7-930c-1f2296d5163c"
+              ]
+            },
+            "labels": [
+              " Ride records "
+            ],
+            "id": "fd6c4a53-6230-42fa-ae5a-f59459e14fdb",
+            "source": {
+              "x": 640,
+              "y": 230
+            },
+            "target": {
+              "cell": "ebec44a1-1648-4e4f-b089-9102c65d7ea5",
+              "port": "77c6935d-371e-4e61-883e-da265544dbbc"
+            },
+            "vertices": [
+              {
+                "x": 730,
+                "y": 270
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Cost update",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": [
+                "2a645873-d971-44c7-930c-1f2296d5163c"
+              ]
+            },
+            "labels": [
+              "Cost update"
+            ],
+            "id": "20b0134d-93b5-4d27-88b2-cc7dbfdaeb71",
+            "source": {
+              "x": 650,
+              "y": 345
+            },
+            "target": {
+              "cell": "ebec44a1-1648-4e4f-b089-9102c65d7ea5",
+              "port": "77c6935d-371e-4e61-883e-da265544dbbc"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": " Audit entry",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": [
+                "2a645873-d971-44c7-930c-1f2296d5163c"
+              ]
+            },
+            "labels": [
+              " Audit entry"
+            ],
+            "id": "ab00c8d7-7e0d-4cf7-915a-64d8919dbdd2",
+            "source": {
+              "x": 650,
+              "y": 360
+            },
+            "target": {
+              "cell": "3cd09959-4350-433a-97d3-85c77444c191",
+              "port": "77c6935d-371e-4e61-883e-da265544dbbc"
+            },
+            "vertices": [
+              {
+                "x": 740,
+                "y": 390
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Checked request",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": [
+                "2a645873-d971-44c7-930c-1f2296d5163c"
+              ]
+            },
+            "labels": [
+              "Checked request"
+            ],
+            "id": "def9aee2-fcad-49d6-99d5-b5bd9bdc0bf3",
+            "source": {
+              "x": 450,
+              "y": 270
+            },
+            "target": {
+              "cell": "3f1d3cea-1e6a-4519-b54f-866e78b25536",
+              "port": "8e69f883-f28b-4607-a0c3-ed71fed4ac2d"
+            },
+            "vertices": [
+              {
+                "x": 550,
+                "y": 240
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Unlock / Rides ",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "9bfa949a-5282-4155-b167-f36b9cf5ad5f",
+                  "title": "Read other riders' rides",
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": " TOP 5. L5 x I4 = 20. A rider can change the number in the URL and see another rider's rides.",
+                  "mitigation": "Use the logged-in rider's id from the session, not from the URL. Return 403 if not logged in. (C2 Auth gate)",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 1,
+                  "score": "20"
+                }
+              ],
+              "trustBoundaryIds": [],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "Unlock / Rides "
+            ],
+            "id": "2b36393e-07d8-4e6b-a266-3b9e5c7d1623",
+            "source": {
+              "x": 132,
+              "y": 70
+            },
+            "target": {
+              "x": 330,
+              "y": 250
+            },
+            "vertices": [
+              {
+                "x": 240,
+                "y": 170
+              }
+            ]
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "API key",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [],
+              "containedElements": []
+            },
+            "labels": [
+              "API key"
+            ],
+            "id": "7092c126-859b-4e30-a7fd-ca189f7b076e",
+            "source": {
+              "cell": "3f1d3cea-1e6a-4519-b54f-866e78b25536",
+              "port": "e1aa093b-90c2-40b6-8887-65ba9978cced"
+            },
+            "target": {
+              "cell": "d498fea8-8371-4ff1-a77a-d58ca9f47cb1",
+              "port": "77c6935d-371e-4e61-883e-da265544dbbc"
+            },
+            "vertices": [
+              {
+                "x": 760,
+                "y": 190
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Unlock command + API key ",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "03150718-3e4b-4af1-b967-02f8f8124695",
+                  "title": "Lock API key stolen",
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "TOP 5. L4 x I5 = 20. The lock API key is written in the code, so anyone who sees the code can unlock bikes.",
+                  "mitigation": " Keep the key in an environment variable, not in the code. (D4 Secrets)",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 2,
+                  "score": "20"
+                },
+                {
+                  "id": "976b20f8-0c26-48f7-9673-7f77db5720ec",
+                  "title": "Slow lock service freezes backend",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Denial of service",
+                  "description": " L3 x I4 = 12. The lock request has no timeout, so if the lock service is slow, the whole backend freezes.",
+                  "mitigation": "Add a timeout of 3 seconds to the lock request. If it fails, show a simple error message.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 5,
+                  "score": "12"
+                }
+              ],
+              "trustBoundaryIds": [
+                "2a645873-d971-44c7-930c-1f2296d5163c",
+                "d019153a-34f7-41fe-a583-9b994811a683"
+              ],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 2
+              }
+            },
+            "labels": [
+              "Unlock command + API key "
+            ],
+            "id": "681b89dc-0ecc-4379-9ea8-9bc2fc4a83ff",
+            "source": {
+              "cell": "3f1d3cea-1e6a-4519-b54f-866e78b25536",
+              "port": "e1aa093b-90c2-40b6-8887-65ba9978cced"
+            },
+            "target": {
+              "cell": "e87f155e-2ccf-4711-b975-cf0ddf3e409b",
+              "port": "6ad8c0d6-1602-47fb-a43d-e382a6a47793"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Refund",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "5df8fedd-7485-4ee2-9607-1f85c1f8fa82",
+                  "title": "Anyone can refund any ride",
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "type": "Tampering",
+                  "description": "TOP 5. L5 x I4 = 20. Anyone can call /refund and set a ride's cost to 0. The code does not check who is calling.",
+                  "mitigation": " Allow /refund only for logged-in operators. Return 403 for everyone else. (C2 Auth gate)",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 6,
+                  "score": "2o"
+                }
+              ],
+              "trustBoundaryIds": [
+                "2a645873-d971-44c7-930c-1f2296d5163c"
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "Refund"
+            ],
+            "id": "32a7659e-a7a6-4692-96ad-3c8b58bb3c1e",
+            "source": {
+              "x": 203,
+              "y": 360
+            },
+            "target": {
+              "cell": "17ae37da-e8a2-4c9e-9901-762b3a01a864",
+              "port": "6ad8c0d6-1602-47fb-a43d-e382a6a47793"
+            },
+            "vertices": [
+              {
+                "x": 250,
+                "y": 360
+              }
+            ]
+          },
+          {
+            "position": {
+              "x": 810,
+              "y": 382
+            },
+            "size": {
+              "width": 120,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "D3 Audit log\nrefund records"
+              },
+              "topLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "zIndex": 11,
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "9add434b-318a-458b-82a8-7b8aed4d8f7f"
+                },
+                {
+                  "group": "right",
+                  "id": "d0db37da-7d9c-403f-8950-33bf3381d9e8"
+                },
+                {
+                  "group": "bottom",
+                  "id": "152dbbfb-d100-4298-9e52-af269fe8856e"
+                },
+                {
+                  "group": "left",
+                  "id": "77c6935d-371e-4e61-883e-da265544dbbc"
+                }
+              ]
+            },
+            "id": "3cd09959-4350-433a-97d3-85c77444c191",
+            "data": {
+              "type": "tm.Store",
+              "name": "D3 Audit log\nrefund records",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isALog": false,
+              "isEncrypted": false,
+              "isSigned": false,
+              "storesCredentials": false,
+              "storesInventory": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 1030,
+              "y": 190
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "E3 Lock API"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "zIndex": 12,
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "51d0c3dc-64d4-41bf-a53e-672021199b31"
+                },
+                {
+                  "group": "right",
+                  "id": "4d62af45-dbbf-4136-a933-21cbda1af24e"
+                },
+                {
+                  "group": "bottom",
+                  "id": "15164594-d001-4e6d-bc32-8fcf11848f11"
+                },
+                {
+                  "group": "left",
+                  "id": "6ad8c0d6-1602-47fb-a43d-e382a6a47793"
+                }
+              ]
+            },
+            "id": "e87f155e-2ccf-4711-b975-cf0ddf3e409b",
+            "data": {
+              "type": "tm.Actor",
+              "name": "E3 Lock API",
+              "description": "",
+              "isTrustBoundary": false,
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": false,
+              "threats": []
+            }
+          }
+        ]
+      }
+    ],
+    "diagramTop": 1,
+    "reviewer": "",
+    "threatTop": 13
+  }
+}

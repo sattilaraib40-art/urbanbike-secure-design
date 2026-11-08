@@ -1,0 +1,98 @@
+rules:
+  - id: hardcoded-credential
+    languages: [python]
+    severity: ERROR
+    message: Hard-coded key or secret. Read it from an environment variable.
+    metadata: {stride: "S", threat: "Spoofing: stolen shared secret"}
+    patterns:
+      - pattern: $K = "..."
+      - metavariable-regex:
+          metavariable: $K
+          regex: (?i).*(secret|password|token|key).*
+  - id: sql-built-from-text
+    languages: [python]
+    severity: ERROR
+    message: SQL built with string formatting. Use a parameterised query.
+    metadata: {stride: "T", threat: "Tampering: SQL injection"}
+    pattern-either:
+      - pattern: $DB.execute($Q % ...)
+      - pattern: $DB.execute(f"...{...}...")
+  - id: route-without-auth
+    languages: [python]
+    severity: ERROR
+    message: Route has no @require_auth. Add authentication and a role check (deny by default).
+    metadata: {stride: "E", threat: "Elevation of privilege: missing authorisation"}
+    patterns:
+      - pattern: |
+          @app.route(...)
+          def $F(...):
+              ...
+      - pattern-not: |
+          @app.route(...)
+          @require_auth(...)
+          def $F(...):
+              ...
+      - metavariable-regex:
+          metavariable: $F
+          regex: ^(?!(login|health)$).*
+  - id: change-without-audit-log
+    languages: [python]
+    severity: WARNING
+    message: Data change with no audit_log() call. Record who did what and when.
+    metadata: {stride: "R", threat: "Repudiation: no audit trail"}
+    patterns:
+      - pattern: |
+          def $F(...):
+              ...
+              $DB.execute($SQL, ...)
+              ...
+      - pattern-not: |
+          def $F(...):
+              ...
+              audit_log(...)
+              ...
+      - metavariable-regex:
+          metavariable: $SQL
+          regex: (?i)^f?["'](update|delete|insert)
+  - id: error-detail-leak
+    languages: [python]
+    severity: WARNING
+    message: Raw exception text returned to the user. Return a generic message and log the detail.
+    metadata: {stride: "I", threat: "Information disclosure: verbose errors"}
+    patterns:
+      - pattern-inside: |
+          try:
+              ...
+          except $X as $E:
+              ...
+      - pattern-either:
+          - pattern: return str($E), $C
+          - pattern: return str($E)
+  - id: debug-and-open-binding
+    languages: [python]
+    severity: WARNING
+    message: Debug mode or binding to all interfaces. Use debug=False and 127.0.0.1.
+    metadata: {stride: "I", threat: "Information disclosure: debug console exposed"}
+    pattern-either:
+      - pattern: $APP.run(..., debug=True, ...)
+      - pattern: $APP.run(..., host="0.0.0.0", ...)
+  - id: outbound-call-without-timeout
+    languages: [python]
+    severity: WARNING
+    message: Outbound request with no timeout can hang the service. Add timeout=5.
+    metadata: {stride: "D", threat: "Denial of service: hanging dependency"}
+    patterns:
+      - pattern: requests.$F(...)
+      - pattern-not: requests.$F(..., timeout=..., ...)
+  - id: tls-verify-disabled
+    languages: [python]
+    severity: ERROR
+    message: TLS certificate check disabled or plain http used. Use https and keep verification on.
+    metadata: {stride: "T", threat: "Tampering: man in the middle"}
+    pattern: requests.$F(..., verify=False, ...)
+  - id: path-from-user-input
+    languages: [python]
+    severity: ERROR
+    message: File path built from user input. Use send_from_directory.
+    metadata: {stride: "I", threat: "Information disclosure: path traversal"}
+    pattern: send_file("..." + $X)
